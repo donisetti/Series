@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Classes\**" />
+    <Compile Remove="Enum\**" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Classes\**" />
+    <EmbeddedResource Remove="Enum\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Classes\**" />
+    <None Remove="Enum\**" />
+    <None Remove="Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dio.Series.Dominio\Dio.Series.Dominio.csproj" />
+  </ItemGroup>
+
+</Project>
